@@ -32,6 +32,10 @@ button{
     border-radius: 15%;
 }
 
+.buttons{
+    padding: 5px
+}
+
 .numbers{
     max-width: 100px;
     min-height: 20px;
