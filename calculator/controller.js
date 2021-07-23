@@ -29,7 +29,7 @@ function updateResultText(value) {
     label.innerHTML = "The result of " + calculator.getAction() + " " + calculator.firstNumber + " and " + calculator.secondNumber + " is " + value
     }
     else{
-        label.innerHTML = "You cannot divide by 0"
+        label.innerHTML = "You cannot divide by zero"
         label.style = "color:red"
     }
 }
