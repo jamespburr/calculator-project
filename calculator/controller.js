@@ -14,10 +14,10 @@ function calculate() {
     CreateCalculator();
     calculator.operator = getOperator();
     let result = calculator.operate();
-    updateResultText(result);
+    updateResultText(calculator.value);
 }
 
-//New Test
+
 /**
  * set the text in the result section of the UI
  * @param {*} value

@@ -49,28 +49,28 @@ class Calculator {
 
     // perform addition operation
     add() {
-        let result = this.firstNumber + this.secondNumber
-        return result
+        this.value = this.firstNumber + this.secondNumber
+        
     }
     // perform subtraction operation
     subtract() {
-        let result = this.firstNumber - this.secondNumber
-        return result
+        this.value = this.firstNumber - this.secondNumber
+        
     }
 
     // perform multiplication operation
     multiply() {
-        let result = this.firstNumber * this.secondNumber
-        return result
+        this.value = this.firstNumber * this.secondNumber
+        
     }
 
     // perform divide operation
     divide() {
-        let result = ""
+        
         if (!this.attemptedDivideByZero){
-            result = this.firstNumber / this.secondNumber
+            this.value = this.firstNumber / this.secondNumber
         }
-        return result
+        
     }
 }
 
