@@ -13,20 +13,31 @@ class Calculator {
 
     // determine the current operation's label
     getAction() {
-        return this.operator
+        let Action = ""
+        switch(this.operator){
+            case "add": 
+                action = "adding"
+            case "subtract":
+                action = "subtracting"
+            case "multiply":
+                action = "multiplying"
+            case "divide":
+                action = "dividing"
+        }
+        return action
     }
 
     // performa a calculation based on the currently selected operation
     operate() {
         
-        if(this.operator === "adding"){
+        if(this.operator === "add"){
             return this.add()
-        } else if (this.operator === "subtracting") {
+        } else if (this.operator === "subtract") {
             return this.subtract()
          
-        } else if (this.operator === "multiplying"){
+        } else if (this.operator === "multiply"){
             return this.multiply()
-        }else if (this.operator === "dividing") {
+        }else if (this.operator === "divide") {
             if (this.secondNumber === 0) {
                 this.attemptedDivideByZero = true              
             }

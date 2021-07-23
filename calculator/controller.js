@@ -23,7 +23,7 @@ function calculate() {
  * @param {*} value
  */
 function updateResultText(value) {
-    document.getElementById("lblResult").innerHTML = "The result of " + calculator.operator + " " + calculator.firstNumber + " and " + calculator.secondNumber + " is " + value
+    document.getElementById("lblResult").innerHTML = "The result of " + calculator.getAction() + " " + calculator.firstNumber + " and " + calculator.secondNumber + " is " + value
 }
 
 // should clear input text values and focus the first number input
