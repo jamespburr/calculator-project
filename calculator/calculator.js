@@ -19,14 +19,14 @@ class Calculator {
     // performa a calculation based on the currently selected operation
     operate() {
         
-        if(this.operator === "add"){
+        if(this.operator === "adding"){
             return this.add()
-        } else if (this.operator === "subtract") {
+        } else if (this.operator === "subtracting") {
             return this.subtract()
          
-        } else if (this.operator === "multiply"){
+        } else if (this.operator === "multiplying"){
             return this.multiply()
-        }else if (this.operator === "divide") {
+        }else if (this.operator === "dividing") {
             if (this.secondNumber === 0) {
                 this.attemptedDivideByZero = true              
             }
