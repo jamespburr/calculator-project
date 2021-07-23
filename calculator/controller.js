@@ -17,6 +17,7 @@ function calculate() {
     updateResultText(result);
 }
 
+//New Test
 /**
  * set the text in the result section of the UI
  * @param {*} value
