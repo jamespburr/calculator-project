@@ -1,1 +1,41 @@
 /* fill in styling here */
+
+#center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#btnCalculate {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#lbl2{
+    margin-left: 5px;
+}
+
+#lblResult{
+    font-size: large;
+}
+
+.buttons{
+    min-width: 50px;
+    border-radius: 15%;
+}
+
+.numbers{
+    max-width: 100px;
+    min-height: 20px;
+}
+
+.section{
+    padding: 5px;
+}
+
+.operators:checked+label{
+    font-weight: bold;
+}

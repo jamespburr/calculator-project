@@ -4,8 +4,8 @@ var calculator
 
 function CreateCalculator() {
     calculator = new Calculator();
-    calculator.firstNumber = parseInt(document.getElementById("txtFirst").value);
-    calculator.secondNumber = parseInt(document.getElementById("txtSecond").value);
+    calculator.firstNumber = parseInt(document.getElementById("inputNumberOne").value);
+    calculator.secondNumber = parseInt(document.getElementById("inputNumberTwo").value);
     
 }
 
@@ -23,14 +23,22 @@ function calculate() {
  * @param {*} value
  */
 function updateResultText(value) {
-    document.getElementById("lblResult").innerHTML = "The result of " + calculator.getAction() + " " + calculator.firstNumber + " and " + calculator.secondNumber + " is " + value
+    let label = document.getElementById("lblResult")
+    label.style = "color:black"
+    if (!calculator.attemptedDivideByZero) {
+    label.innerHTML = "The result of " + calculator.getAction() + " " + calculator.firstNumber + " and " + calculator.secondNumber + " is " + value
+    }
+    else{
+        label.innerHTML = "You cannot divide by 0"
+        label.style = "color:red"
+    }
 }
 
 // should clear input text values and focus the first number input
 function clearValues() {
-    document.getElementById("txtFirst").value = null;
-    document.getElementById("txtFirst").focus();
-    document.getElementById("txtSecond").value = null;
+    document.getElementById("inputNumberOne").value = null;
+    document.getElementById("inputNumberOne").focus();
+    document.getElementById("inputNumberTwo").value = null;
     let radioButtons = document.getElementsByName("operation");
     for (let i = 0; i < radioButtons.length; i++){
         radioButtons[i].checked = false;
