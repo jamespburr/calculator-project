@@ -9,8 +9,13 @@
     text-align: center;
 }
 
-#btnCalculate {
+.operate {
     background-color: cornflowerblue;
+    color: white;
+}
+
+.clear{
+    background: grey;
     color: white;
 }
 
@@ -22,7 +27,7 @@
     font-size: large;
 }
 
-.buttons{
+button{
     min-width: 50px;
     border-radius: 15%;
 }
