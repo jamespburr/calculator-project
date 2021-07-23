@@ -13,7 +13,7 @@ class Calculator {
 
     // determine the current operation's label
     getAction() {
-        let Action = ""
+        let action = ""
         switch(this.operator){
             case "add": 
                 action = "adding"
