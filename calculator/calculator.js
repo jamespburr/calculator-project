@@ -17,12 +17,16 @@ class Calculator {
         switch(this.operator){
             case "add": 
                 action = "adding"
+                break
             case "subtract":
                 action = "subtracting"
+                break
             case "multiply":
                 action = "multiplying"
+                break
             case "divide":
                 action = "dividing"
+                break
         }
         return action
     }
