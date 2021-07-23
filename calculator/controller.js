@@ -23,7 +23,7 @@ function calculate() {
  * @param {*} value
  */
 function updateResultText(value) {
-    let label = document.getElementById("lblResult")
+    let label = document.getElementById("result")
     label.style = "color:black"
     if (!calculator.attemptedDivideByZero) {
     label.innerHTML = "The result of " + calculator.getAction() + " " + calculator.firstNumber + " and " + calculator.secondNumber + " is " + value
