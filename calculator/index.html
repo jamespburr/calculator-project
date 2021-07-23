@@ -7,17 +7,29 @@
         <link rel="stylesheet" type="text/css" href="calculator.css" />
     </head>
     <body>
-        <form>
+            <div>
                 <label for="txtFirst">First Number: </label>
-                <input id="txtFirst" type="text"/>
+                <input id="txtFirst" type="number"/>
                 <label for="txtSecond">Second Number: </label>
-                <input id="txtSecond" type="text"/>
-                <div>
-                    <button id="btnCalculate">=</button>
-                    <button id="btnClear">Clear</button>
-                </div>
-                <label id="lblResult"></label>          
-        </form>
+                <input id="txtSecond" type="number"/>
+            </div>
+            <div>
+                <label for="rbAdd">Add</label>
+                <input id="rbAdd" type="radio" name="operation" value="add"/>
+                <label for="rbSubtract">Subtract</label>
+                <input id="rbSubtract" type="radio" name="operation" value="subtract"/>
+                <label for="rbMultiply">Multiply</label>
+                <input id="rbMultiply" type="radio" name="operation" value="multiply"/>
+                <label for="rbDivide">Divide</label>
+                <input id="rbDivide" type="radio" name="operation" value="divide"/>
+            </div>
+            <div>
+                <button id="btnCalculate" onclick="calculate()">=</button>
+                <button id="btnClear" onclick="clearValues()">Clear</button>
+            </div>
+            <label id="lblResult"></label>
+                  
+       
 
     </body>
 </html>
